@@ -1,0 +1,12 @@
+{
+  "name": "@hogni/hogni",
+  "version": "0.0.1",
+  "tasks": {
+    "start": "deno run --allow-net --allow-env --allow-read main.ts",
+    "dev": "deno run --allow-net --allow-env --allow-read --watch main.ts"
+  },
+  "exports": "./main.ts",
+  "imports": {
+    "@/": "./src/"
+  }
+}
