@@ -1,6 +1,7 @@
 import HTMLResponse from "@/Server/Response/HTMLResponse.ts";
+import BaseController from "@/controllers/BaseController.ts";
 
-class HomeController {
+class HomeController extends BaseController {
   static show(): HTMLResponse {
     return new HTMLResponse({
       body: this.createBody(),

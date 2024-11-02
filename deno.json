@@ -8,5 +8,8 @@
   "exports": "./main.ts",
   "imports": {
     "@/": "./src/"
+  },
+  "fmt": {
+    "exclude": ["README.md"]
   }
 }
