@@ -1,13 +1,14 @@
 {
   "name": "@hogni/hogni",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "tasks": {
     "start": "deno run --allow-net --allow-env --allow-read main.ts",
     "dev": "deno run --allow-net --allow-env --allow-read --watch main.ts"
   },
   "exports": "./main.ts",
   "imports": {
-    "@/": "./src/"
+    "@/": "./src/",
+    "@std/dotenv": "jsr:@std/dotenv@^0.225.3"
   },
   "fmt": {
     "exclude": ["README.md"]
