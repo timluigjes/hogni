@@ -87,7 +87,7 @@ class FileController extends BaseController {
     headers.append("Content-Type", this.fileInfo.mimeType);
     headers.append("Content-Length", String(file.byteLength));
 
-    const arrayBuffer = file.buffer;
+    const arrayBuffer = file.buffer as ArrayBuffer;
 
     return new FileResponse({
       name: this.fileInfo.name,
